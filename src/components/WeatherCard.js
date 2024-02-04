@@ -4,7 +4,7 @@ import TextComponent from './TextComponent.js'; // Assuming 'Texto' means 'TextC
 
 export default function ForecastCard(props) {
   const containerStyle = {
-    backgroundColor: props.status === 1 ? '#427BFF' : '#E2DEDD',
+    backgroundColor: props.status === 1 ? "#E2DEDD" : "#427BFF",
   };
 
   return (
