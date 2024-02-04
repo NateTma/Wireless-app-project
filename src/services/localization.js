@@ -8,9 +8,9 @@ export default async () => {
     if (status !== 'granted') {
       return;
     }
-    let localizacao =  await Location.getCurrentPositionAsync({});
-    let lat = localizacao.coords.latitude;
-    let long = localizacao.coords.longitude
+    let localization =  await Location.getCurrentPositionAsync({});
+    let lat = localization.coords.latitude;
+    let long = localization.coords.longitude
     return {latitude:lat, longitude:long}
   }
     else if(googlePlaces != null){
