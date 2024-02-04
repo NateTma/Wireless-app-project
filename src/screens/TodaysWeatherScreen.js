@@ -1,6 +1,6 @@
 import React, { useRef, useState, useEffect } from "react";
 import { View, StyleSheet } from "react-native";
-import Location from "../components/Localizacao.js";
+import Location from "../components/Location.js";
 import Icon from "react-native-vector-icons/Feather";
 import ForecastContainer from "../components/DailyForecast.js";
 import { captureRef } from "react-native-view-shot";
@@ -10,7 +10,7 @@ import { useNavigation } from '@react-navigation/native';
 
 import Update from "../services/updateScreen";
 
-export default function TodaysWeatherForecast(props) {
+export default function TodaysWeatherScreen(props) {
   const [key, setKey] = useState()
   Update(setKey)
   const viewRef = useRef();
@@ -37,8 +37,8 @@ export default function TodaysWeatherForecast(props) {
         <Icon name="menu" size={30} color="#747474" onPress={()=>navigation.openDrawer()}/>
         <Icon name="share-2" size={30} color="#747474" onPress={shareWeather} />
       </View>
-      <Localizacao tam1={28} tam2={20} cor1="#121212" cor2="#323232" />
-      <ContainerPrevisao />
+      <Location size1={28} size2={20} color1="#121212" color2="#323232" />
+      <ForecastContainer />
     </View>
   );
 }
