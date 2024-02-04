@@ -10,7 +10,7 @@ export default function ForecastCard(props) {
   return (
     <View style={[styles.container, containerStyle]}>
       <TextComponent text={props.txtHour} size={30} color={props.corH} bold='normal' />
-      <Image source={{ uri: props.imgWeather }} style={{ width: 30, height: 30 }} />
+      <Image source={{ uri: props.imgTempo}} style={{ width: 30, height: 30 }} />
       <TextComponent text={props.txtTemperature} size={15} color={props.corT} bold='bold' />
     </View>
   );
