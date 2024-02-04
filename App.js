@@ -4,8 +4,8 @@ import { StyleSheet, StatusBar, SafeAreaView ,Platform,View } from 'react-native
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import NextDaysScreen from './src/screens/NextDaysScreen.js';
-import TelaTempoHoje from './src/telas/TelaTempoHoje.js';
-import DrawerContent from './src/componentes/DrawerContent';
+import TodaysWeatherScreen from './src/screens/TodaysWeatherScreen';
+import DrawerContent from './src/components/DrawerContent';
 
 
 
@@ -19,7 +19,7 @@ const Drawer = createDrawerNavigator();
 function Home() {
   return (
     <Drawer.Navigator screenOptions={{headerShown: false}} drawerContent={DrawerContent}>
-      <Drawer.Screen name="Main" component={TelaTempoHoje}/>
+      <Drawer.Screen name="Main" component={TodaysWeatherScreen}/>
     </Drawer.Navigator>
   );
 }
