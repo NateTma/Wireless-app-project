@@ -22,7 +22,7 @@ export default function NextDaysScreen() {
     return (
         <View style = {styles.container}>
             <View style={styles.div1}>
-            <TextBarScreen/>
+            <TextBarScreen2/>
             </View>
             <View style={styles.div2}>
             <TextComponent text='Next 7 days' fontWeight='bold' size={20} color='#D6E3FF'/>
