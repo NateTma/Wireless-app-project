@@ -5,7 +5,7 @@ import TextComponent from './TextComponent.js'; // Assuming 'Texto' means 'TextC
 export default function WeatherIcon(props) {
     return (
         <View style={styles.container}>
-            <Image source={{ uri: props.imgWeather }} style={{ width: 50, height: 50 }} />
+            <Image source={{ uri: props.imgWTempo}} style={{ width: 50, height: 50 }} />
         </View>
     );
 }
