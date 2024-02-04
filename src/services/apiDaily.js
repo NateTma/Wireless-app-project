@@ -11,6 +11,5 @@ export default async() => {
     const lat =  cord.latitude;
     const long = cord.longitude
     const api = `https://api.openweathermap.org/data/2.5/forecast/daily?lat=${lat}&lon=${long}&units=metric&cnt=8&appid=${API_KEY}`
-    
-	return api;
+    return api;
 }
