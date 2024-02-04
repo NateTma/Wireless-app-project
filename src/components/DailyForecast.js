@@ -24,7 +24,7 @@ function GetCard(props) {
 
   return (
     <TouchableOpacity onPress={props.status === 2 ? null : props.function}>
-      <WeatherCard
+      <ForecastCard
         status={props.status}
         hourText={
           props.id === 0
@@ -50,7 +50,7 @@ function GetCard(props) {
   );
 }
 
-export default function WeatherContainer(props) {
+export default function ForecastContainer(props) {
   const [data, setData] = useState({});
   const [activeCard, setActiveCard] = useState(0);
   const [url, setUrl] = useState(api);
